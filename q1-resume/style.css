@@ -1,0 +1,307 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    zoom: 0.65;
+  }
+  
+
+  body::before {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%; /* Adjust this value to control the height of the footer */
+    background-color: #cb3931; /* Use the same background color as the red background */
+    z-index: -1;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%; /* This will cover the remaining top part after zooming */
+    background-color: #f0f0f0;
+    z-index: -1;
+  }
+  
+  /* Updated CSS class names */
+  .superscript {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+  }
+  
+  .subscript {
+    vertical-align: baseline;
+    position: relative;
+    top: 0.4em;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  @media screen and (min-device-pixel-ratio: 0),
+  (-webkit-min-device-pixel-ratio: 0),
+  (min--moz-device-pixel-ratio: 0) {
+    .view {
+      font-size: 10em;
+      transform: scale(0.1);
+      -moz-transform: scale(0.1);
+      -webkit-transform: scale(0.1);
+      -moz-transform-origin: top left;
+      -webkit-transform-origin: top left;
+    }
+  }
+  
+  .layer {}
+  
+  .ie {
+    font-size: 1pt;
+  }
+  
+  .ie body {
+    font-size: 12em;
+  }
+  
+  @media print {
+    .view {
+      font-size: 1em;
+      transform: scale(1);
+    }
+  }
+  
+  .grlink {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+  }
+  
+  .position-absolute {
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .rectangle {
+    font-size: 1em;
+    line-height: 0.0em;
+    width: 51em;
+    height: 71.5em;
+    border-top: 0.083333336em solid Black;
+    border-right: 0.083333336em solid Black;
+    border-bottom: 0.083333336em solid Black;
+    border-left: 0.083333336em solid Black;
+    display: block;
+    margin: 0em;
+  
+  }
+  
+  @supports (-ms-ime-align: auto) {
+    .rectangle {
+      overflow: hidden;
+    }
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .absolute {
+    position: absolute;
+    pointer-events: none;
+    clip: rect(-0.116501em, 51.02325em, 71.54166em, -0.041667em);
+    width: 100%;
+  }
+  
+  .width-51 {
+    position: relative;
+    width: 51em;
+  }
+  
+  .height-7 {
+    height: 7.15em;
+  }
+  
+  .ie .height-7 {
+    height: 71.5em;
+  }
+  
+  .scale-1 {
+    -o-transform: scale(1, 1.0001554);
+    -webkit-transform: scale(1, 1.0001554);
+    -moz-transform: scale(1, 1.0001554);
+    transform: scale(1, 1.0001554);
+    -o-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-webkit-transform-origin: top left;
+    -transform-origin: top left;
+    -ms-transform: matrix(1, 0, 0, 1.0001554, 0, -0);
+    -ms-transform-origin: top left;
+  }
+  
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("fonts/Poppins-Regular.ttf");
+  }
+  
+  .font-1 {
+    font-size: 0.696867em;
+    font-family: "Poppins-Regular";
+    color: #cb3931;
+  }
+  
+  .line-height {
+    line-height: 1.762em;
+  }
+  
+  .no-letter-spacing {
+    letter-spacing: 0em;
+  }
+  
+  .ie .no-letter-spacing {
+    letter-spacing: 0px;
+  }
+  
+  .negative-letter-spacing {
+    letter-spacing: -0em;
+  }
+  
+  .ie .negative-letter-spacing {
+    letter-spacing: -0px;
+  }
+  
+  @font-face {
+    font-family: "Poppins-Medium";
+    src: url("fonts/Poppins-Medium.ttf");
+  }
+  
+  .font-2 {
+    font-size: 0.673508em;
+    font-family: "Poppins-Medium";
+    color: #cb3930;
+  }
+  
+  .letter-spacing-0-05 {
+    letter-spacing: 0.05em;
+  }
+  
+  .ie .letter-spacing-0-05 {
+    letter-spacing: 0.5388px;
+  }
+  
+  .font-3 {
+    font-size: 0.864817em;
+    font-family: "Poppins-Medium";
+    color: #cb3931;
+  }
+  
+  @font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("fonts/Poppins-SemiBold.ttf");
+  }
+  
+  .font-4 {
+    font-size: 5.417775em;
+    font-family: "Poppins-SemiBold";
+    color: #000000;
+  }
+  
+  .font-5 {
+    font-size: 1.347025em;
+    font-family: "Poppins-Medium";
+    color: #cb3931;
+  }
+  
+  .letter-spacing-0-01 {
+    letter-spacing: 0.01em;
+  }
+  
+  .ie .letter-spacing-0-01 {
+    letter-spacing: 0.2155px;
+  }
+  
+  @font-face {
+    font-family: "Poppins-MediumItalic";
+    src: url("fonts/Poppins-MediumItalic.ttf");
+  }
+  
+  .font-6 {
+    font-size: 0.841892em;
+    font-family: "Poppins-MediumItalic", "Times New Roman";
+    color: #121214;
+  }
+  
+  .font-7 {
+    font-size: 0.994367em;
+    font-family: "Poppins-MediumItalic", "Times New Roman";
+    color: #111214;
+  }
+  
+  .font-8 {
+    font-size: 1.010267em;
+    font-family: "Poppins-SemiBold";
+    color: #111214;
+  }
+  
+  .font-9 {
+    font-size: 0.696867em;
+    font-family: "Poppins-Regular";
+    color: #868686;
+  }
+  
+  .scale-2 {
+    -o-transform: scale(1, 1.0001584);
+    -webkit-transform: scale(1, 1.0001584);
+    -moz-transform: scale(1, 1.0001584);
+    transform: scale(1, 1.0001584);
+    -o-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-webkit-transform-origin: top left;
+    -transform-origin: top left;
+    -ms-transform: matrix(1, 0, 0, 1.0001584, 0, -0);
+    -ms-transform-origin: top left;
+  }
+  
+  .font-10 {
+    font-size: 0.841758em;
+    font-family: "Poppins-Regular";
+    color: #868686;
+  }
+  
+  .font-11 {
+    font-size: 0.841892em;
+    font-family: "Poppins-MediumItalic", "Times New Roman";
+    color: #111214;
+  }
+  
+  /* .taha {
+
+background-color: #cb3930;
+width: 100px;
+height: 100px;
+top : 100px ; 
+right: 100px;
+position: fixed;
+
+
+
+  } */
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%; /* Adjust this value to control the height of the footer */
+    background-color: #cb3931; /* Use the same background color as the red background */
+    z-index: -1;
+}

@@ -1,269 +1,136 @@
-<!DOCTYPE html><!--[if IE]>  <html class="stl_ie"> <![endif]-->
+<!DOCTYPE html>
+<!--[if IE]>  <html class="stl_ie"> <![endif]-->
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>
-			Tap - Q1
-		</title>
-		
-	<STYLE>
-
-body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      zoom: 0.67;
-    }
-
-        body::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 35%; /* Adjust this value to control the height of the red background */
-            background-color: #cb3931; /* You can use a different color or hexadecimal code here */
-            z-index: -1;
-        }
-
-		body::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 65%; /* This will cover the remaining top part */
-            background-color: #f0f0f0; /* You can use a different color or hexadecimal code here */
-            z-index: -1;
-        }
-.stl_ sup {
-	vertical-align: baseline;
-	position: relative;
-	top: -0.4em;
-}
-.stl_ sub {
-	vertical-align: baseline;
-	position: relative;
-	top: 0.4em;
-}
-.stl_ a:link {text-decoration:none;}
-.stl_ a:visited {text-decoration:none;}
-@media screen and (min-device-pixel-ratio:0), (-webkit-min-device-pixel-ratio:0), (min--moz-device-pixel-ratio: 0) {.stl_view{ font-size:10em; transform:scale(0.1); -moz-transform:scale(0.1); -webkit-transform:scale(0.1); -moz-transform-origin:top left; -webkit-transform-origin:top left; } }
-.stl_layer { }.stl_ie { font-size: 1pt; }
-.stl_ie body { font-size: 12em; }
-@media print{.stl_view {font-size:1em; transform:scale(1);}}
-.stl_grlink { position:relative;width:100%;height:100%;z-index:1000000; }
-.stl_01 {
-	position: absolute;
-	white-space: nowrap;
-}
-.stl_02 {
-	font-size: 1em;
-	line-height: 0.0em;
-	width: 51em;
-	height: 71.5em;
-	border-top: 0.083333336em solid Black;
-	border-right: 0.083333336em solid Black;
-	border-bottom: 0.083333336em solid Black;
-	border-left: 0.083333336em solid Black;
-	display: block;
-	margin: 0em;
-}
-
-@supports(-ms-ime-align:auto) { .stl_02 {overflow: hidden;}}
-.stl_03 {
-	position: relative;
-}
-.stl_04 {
-	position: absolute;
-	pointer-events: none;
-	clip: rect(-0.116501em,51.02325em,71.54166em,-0.041667em);
-	width: 100%;
-}
-.stl_05 {
-	position: relative;
-	width: 51em;
-}
-.stl_06 {
-	height: 7.15em;
-}
-.stl_ie .stl_06 {
-	height: 71.5em;
-}
-.stl_07 {
-	-o-transform: scale(1,1.0001554);
-	-webkit-transform: scale(1,1.0001554);
-	-moz-transform: scale(1,1.0001554);
-	transform: scale(1,1.0001554);
-	-o-transform-origin: top left;
-	-webkit-transform-origin: top left;
-	-moz-webkit-transform-origin: top left;
-	-transform-origin: top left;
-	-ms-transform: matrix(1,0,0,1.0001554,0,-0);
-	-ms-transform-origin: top left;
-}
-@font-face {
-	font-family:"ICPRUD+Poppins-Regular";
-	src:url("fonts/Poppins-Regular.ttf");
-	
-}
-.stl_08 {
-	font-size: 0.696867em;
-	font-family: "ICPRUD+Poppins-Regular";
-	color: #CB3931;
-}
-.stl_09 {
-	line-height: 1.762em;
-}
-.stl_10 {
-	letter-spacing: 0em;
-}
-
-.stl_ie .stl_10 {
-	letter-spacing: 0px;
-}
-.stl_11 {
-	letter-spacing: -0em;
-}
-
-.stl_ie .stl_11 {
-	letter-spacing: -0px;
-}
-@font-face {
-	font-family:"HDFFKI+Poppins-Medium";
-	src:url("fonts/Poppins-Medium.ttf");
-	
-}
-.stl_12 {
-	font-size: 0.673508em;
-	font-family: "HDFFKI+Poppins-Medium";
-	color: #CB3930;
-}
-.stl_13 {
-	letter-spacing: 0.05em;
-}
-
-.stl_ie .stl_13 {
-	letter-spacing: 0.5388px;
-}
-.stl_14 {
-	font-size: 0.864817em;
-	font-family: "HDFFKI+Poppins-Medium";
-	color: #CB3931;
-}
-@font-face {
-	font-family:"BQJWND+Poppins-SemiBold";
-	src:url("fonts/Poppins-SemiBold.ttf");
-	
-}
-.stl_15 {
-	font-size: 5.417775em;
-	font-family: "BQJWND+Poppins-SemiBold";
-	color: #000000;
-}
-.stl_16 {
-	font-size: 1.347025em;
-	font-family: "HDFFKI+Poppins-Medium";
-	color: #CB3931;
-}
-.stl_17 {
-	letter-spacing: 0.01em;
-}
-
-.stl_ie .stl_17 {
-	letter-spacing: 0.2155px;
-}
-@font-face {
-	font-family:"SQKAPV+Poppins-MediumItalic";
-	src:url("fonts/Poppins-MediumItalic.ttf");
-	
-}
-.stl_18 {
-	font-size: 0.841892em;
-	font-family: "SQKAPV+Poppins-MediumItalic", "Times New Roman";
-	color: #121214font;
-}
-.stl_19 {
-	font-size: 0.994367em;
-	font-family: "SQKAPV+Poppins-MediumItalic", "Times New Roman";
-	color: #111214;
-}
-.stl_20 {
-	font-size: 1.010267em;
-	font-family: "BQJWND+Poppins-SemiBold";
-	color: #111214;
-}
-.stl_21 {
-	font-size: 0.696867em;
-	font-family: "ICPRUD+Poppins-Regular";
-	color: #868686;
-}
-.stl_22 {
-	-o-transform: scale(1,1.0001584);
-	-webkit-transform: scale(1,1.0001584);
-	-moz-transform: scale(1,1.0001584);
-	transform: scale(1,1.0001584);
-	-o-transform-origin: top left;
-	-webkit-transform-origin: top left;
-	-moz-webkit-transform-origin: top left;
-	-transform-origin: top left;
-	-ms-transform: matrix(1,0,0,1.0001584,0,-0);
-	-ms-transform-origin: top left;
-}
-.stl_23 {
-	font-size: 0.841758em;
-	font-family: "ICPRUD+Poppins-Regular";
-	color: #868686;
-}
-.stl_24 {
-	font-size: 0.841892em;
-	font-family: "SQKAPV+Poppins-MediumItalic", "Times New Roman";
-	color: #111214;
-}
-
-</STYLE>
+<head>
+  <meta charset="utf-8" />
+  <title>
+    Tap - Q1
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  
+  </style>
 </head>
-	<body style="display: flex; justify-content: center; align-items: center; margin: ;      overflow: hidden;">
-		<div class="stl_ stl_02">
-			<div class="stl_03">
-				<img src="https://i.ibb.co/VMSdj3x/tapp.png" alt="" class="stl_04" />
-			</div>
-			<div class="stl_view">
-				<div class="stl_05 stl_06">
-					<div class="stl_01 stl_07" style="left:4.9136em;top:6.6104em;"><span class="stl_08 stl_09 stl_10" style="word-spacing:0em;">&nbsp;</span></div>
-					<div class="stl_01 stl_07" style="left:4.9136em;top:7.621em;"><span class="stl_08 stl_09 stl_10" style="word-spacing:-0em;">Hello , This is My Cv Using Html And Css&nbsp;</span viverra luctus erat porttitor ></div>
-					<div class="stl_01 stl_07" style="left:4.9136em;top:8.631em;"><span class="stl_08 stl_09 stl_10" style="word-spacing:-0em;">For Tap Application &nbsp;</span></div>
-					<div class="stl_01 stl_07" style="left:4.9136em;top:9.6409em;"><span class="stl_08 stl_09 stl_11" style="word-spacing:0.267em;">I hope that appeal to you</span><span class="stl_08 stl_09 stl_10" style="word-spacing:0em;">&nbsp;</span><span class="stl_08 stl_09 stl_10" style="word-spacing:0em;">&nbsp;</span></div>
-					<div class="stl_01 stl_07" style="left:4.9136em;top:10.6515em;"><span class="stl_08 stl_09 stl_10" style="word-spacing:-0em;">With respect and appreciation   &nbsp;</span></div>
-					<div class="stl_01 stl_07" style="left:4.9136em;top:11.6614em;"><span class="stl_08 stl_09 stl_10" style="word-spacing:-0em;">Mohammad Taha&nbsp;</span></div>
-					<div class="stl_01 stl_07" style="left:5.0996em;top:12.6713em;"><span class="stl_08 stl_09 stl_11" style="word-spacing:0em;">2023-2024 &nbsp;</span></div>
-					<div class="stl_01" style="left:27.7387em;top:29.0774em;"><span class="stl_12 stl_09 stl_13" style="word-spacing:0em;">+(970)595098590 &nbsp;</span></div>
-					<div class="stl_01" style="left:27.6984em;top:30.462em;"><a href="mailto:motaha@engineer.com" target="_blank"><span class="stl_14 stl_09 stl_13">motaha@engineer.com &nbsp;</span></a></div>
-					<div class="stl_01" style="left:27.6984em;top:32.0671em;z-index:463;"><a href="https://motaha1.github.io/portfolio.github.io/" target="_blank"><span class="stl_14 stl_09 stl_13">www.cv-motaha.com &nbsp;</span></a></div>
-					<div class="stl_01" style="left:7.515em;top:27.3645em;z-index:14;"><span class="stl_15 stl_09 stl_11" style="word-spacing:0em;">Hi, i’m &nbsp;</span></div>
-					<div class="stl_01" style="left:7.515em;top:32.4139em;z-index:23;"><span class="stl_15 stl_09 stl_11" style="word-spacing:-0em;">Mohamad Taha &nbsp;</span></div>
-					<div class="stl_01" style="left:7.8518em;top:40.133em;z-index:47;"><span class="stl_16 stl_09 stl_17" style="word-spacing:-0em;">Computer Engineer &nbsp;</span></div>
-					<div class="stl_01" style="left:5.1577em;top:48.9062em;"><span class="stl_16 stl_09 stl_17">EXPERIENCE &nbsp;</span></div>
-					<div class="stl_01" style="left:31.2429em;top:48.9062em;"><span class="stl_16 stl_09 stl_17">EDUCATION &nbsp;</span></div>
-					<div class="stl_01" style="left:31.5735em;top:52.465em;"><span class="stl_18 stl_09 stl_10">2018-2023 &nbsp;</span></div>
-					<div class="stl_01" style="left:5.1577em;top:52.3803em;"><span class="stl_19 stl_09 stl_10">2022-2023 &nbsp;</span></div>
-					<div class="stl_01" style="left:31.4049em;top:54.2145em;"><span class="stl_14 stl_09 stl_13" style="word-spacing:-0em;">An-Najah University &nbsp;</span></div>
-					<div class="stl_01" style="left:4.9893em;top:54.1282em;"><span class="stl_20 stl_09 stl_11" style="word-spacing:0em;">Backend Trainee</span><span class="stl_20 stl_09 stl_10" style="word-spacing:0.238em;">&nbsp;</span><span class="stl_20 stl_09 stl_10" style="word-spacing:0.3165em;">- </span><span class="stl_14 stl_09 stl_13" style="word-spacing:-0em;">Asal Technologies &nbsp;</span></div>
-					<div class="stl_01 stl_07" style="left:31.4049em;top:55.5836em;"><span class="stl_21 stl_09 stl_11" style="word-spacing:0em;">Computer Engineering &nbsp;</span></div>
-					<div class="stl_01 stl_07" style="left:31.4049em;top:56.7622em;"><span class="stl_21 stl_09 stl_11" style="word-spacing:0em;">GPA :3.1 &nbsp;</span></div>
-					<div class="stl_01 stl_22" style="left:4.9893em;top:56.0031em;"><span class="stl_23 stl_09 stl_10" style="word-spacing:-0em;">using Django FrameWork &nbsp;</span></div>
-					<div class="stl_01 stl_22" style="left:4.9893em;top:57.0134em;z-index:256;"><span class="stl_23 stl_09 stl_10" style="word-spacing:-0em;">MVT and MVC architecture &nbsp;</span></div>
-					<div class="stl_01" style="left:31.5735em;top:60.7716em;"><span class="stl_24 stl_09 stl_10">2015-2017 &nbsp;</span></div>
-					<div class="stl_01" style="left:5.1577em;top:60.6869em;"><span class="stl_19 stl_09 stl_10">2022-2023 &nbsp;</span></div>
-					<div class="stl_01" style="left:31.4049em;top:62.5213em;"><span class="stl_14 stl_09 stl_13" style="word-spacing:-0em;">Islamic School  &nbsp;</span></div>
-					<div class="stl_01" style="left:4.9893em;top:62.435em;"><span class="stl_20 stl_09 stl_11" style="word-spacing:0em;">Backend Trainee</span><span class="stl_20 stl_09 stl_10" style="word-spacing:0.238em;">&nbsp;</span><span class="stl_20 stl_09 stl_10" style="word-spacing:0.3165em;">- </span><span class="stl_14 stl_09 stl_13" style="word-spacing:-0em;">ITG &nbsp;</span></div>
-					<div class="stl_01 stl_07" style="left:31.4049em;top:63.8904em;"><span class="stl_21 stl_09 stl_11" style="word-spacing:0em;">Tawjehi &nbsp;</span></div>
-					<div class="stl_01 stl_07" style="left:31.4049em;top:65.069em;"><span class="stl_21 stl_09 stl_11" style="word-spacing:0em;">Grade : 95/100 &nbsp;</span></div>
-					<div class="stl_01 stl_22" style="left:4.9893em;top:64.3099em;"><span class="stl_23 stl_09 stl_10" style="word-spacing:-0em;">Sales Force Backend  &nbsp;</span></div>
-					<div class="stl_01 stl_22" style="left:4.9893em;top:65.3202em;z-index:446;"><span class="stl_23 stl_09 stl_10" style="word-spacing:-0em;">MVC architecture &nbsp;</span></div>
+<body>
+  <header>
+
+
+    <div class="rectangle">
+
+      <div class="relative">
+        <img src="https://i.ibb.co/VMSdj3x/tapp.png" alt="" class="absolute" />
+      </div>
+      <div class="view">
+        <div class="width-51 height-7">
+          <div class="position-absolute grlink" style="left:4.9136em;top:6.6104em;">
+            <span class="font-1 line-height no-letter-spacing">&nbsp;</span>
+          </div>
+          <div class="position-absolute grlink" style="left:4.9136em;top:7.621em;">
+            <span class="font-1 line-height negative-letter-spacing">Hello , This is My Cv Using Html And Css&nbsp;</span>
+      
+          </div>
+          <div class="position-absolute grlink" style="left:4.9136em;top:8.631em;">
+            <span class="font-1 line-height negative-letter-spacing">For Tap Application &nbsp;</span>
+          </div>
+          <div class="position-absolute grlink" style="left:4.9136em;top:9.6409em;">
+            <span class="font-1 line-height no-letter-spacing" style="word-spacing: 0.267em;">I hope that appeal to you</span>
+            <span class="font-1 line-height no-letter-spacing">&nbsp;</span>
+            <span class="font-1 line-height no-letter-spacing">&nbsp;</span>
+          </div>
+          <div class="position-absolute grlink" style="left:4.9136em;top:10.6515em;">
+            <span class="font-1 line-height negative-letter-spacing">With respect and appreciation   &nbsp;</span>
+          </div>
+          <div class="position-absolute grlink" style="left:4.9136em;top:11.6614em;">
+            <span class="font-1 line-height negative-letter-spacing">Mohammad Taha&nbsp;</span>
+          </div>
+          <div class="position-absolute grlink" style="left:5.0996em;top:12.6713em;">
+            <span class="font-1 line-height no-letter-spacing">2023-2024 &nbsp;</span>
+          </div>
+          <div class="position-absolute grlink" style="left:27.7387em;top:29.0774em;">
+            <span class="font-2 line-height letter-spacing-0-05">+(970)595098590 &nbsp;</span>
+          </div>
+          <div class="position-absolute grlink" style="left:27.6984em;top:30.462em;">
+            <a href="mailto:motaha@engineer.com" target="_blank">
+              <span class="font-3 line-height letter-spacing-0-05">motaha@engineer.com &nbsp;</span>
+            </a>
+          </div>
+          <div class="position-absolute grlink" style="left:27.6984em;top:32.0671em;z-index:463;">
+            <a href="https://motaha1.github.io/portfolio.github.io/" target="_blank">
+              <span class="font-3 line-height letter-spacing-0-05">www.cv-motaha.com &nbsp;</span>
+            </a>
+          </div>
+          <div class="position-absolute" style="left:7.515em;top:27.3645em;z-index:14;">
+            <span class="font-4 line-height negative-letter-spacing">Hi, i’m &nbsp;</span>
+          </div>
+          <div class="position-absolute" style="left:7.515em;top:32.4139em;z-index:23;">
+            <span class="font-4 line-height negative-letter-spacing">Mohamad Taha &nbsp;</span>
+          </div>
+          <div class="position-absolute" style="left:7.8518em;top:40.133em;z-index:47;">
+            <span class="font-5 line-height letter-spacing-0-01">Computer Engineer &nbsp;</span>
+          </div>
+          <div class="position-absolute" style="left:5.1577em;top:48.9062em;">
+            <span class="font-5 line-height no-letter-spacing">EXPERIENCE &nbsp;</span>
+          </div>
+          <div class="position-absolute" style="left:31.2429em;top:48.9062em;">
+            <span class="font-5 line-height no-letter-spacing">EDUCATION &nbsp;</span>
+          </div>
+          <div class="position-absolute" style="left:31.5735em;top:52.465em;">
+            <span class="font-6 line-height no-letter-spacing">2018-2023 &nbsp;</span>
+          </div>
+          <div class="position-absolute" style="left:5.1577em;top:52.3803em;">
+            <span class="font-7 line-height no-letter-spacing">2022-2023 &nbsp;</span>
+          </div>
+          <div class="position-absolute" style="left:31.4049em;top:54.2145em;">
+            <span class="font-3 line-height letter-spacing-0-05 negative-letter-spacing">An-Najah University &nbsp;</span>
+          </div>
+          <div class="position-absolute" style="left:4.9893em;top:54.1282em;">
+            <span class="font-8 line-height letter-spacing-0-01">Backend Trainee</span>
+            <span class="font-8 line-height no-letter-spacing" style="word-spacing: 0.238em;">&nbsp;</span>
+            <span class="font-8 line-height no-letter-spacing" style="word-spacing: 0.3165em;">-</span>
+            <span class="font-3 line-height letter-spacing-0-05 negative-letter-spacing">Asal Technologies &nbsp;</span>
+          </div>
+          <div class="position-absolute grlink" style="left:31.4049em;top:55.5836em;">
+            <span class="font-9 line-height letter-spacing-0-01">Computer Engineering &nbsp;</span>
+          </div>
+          <div class="position-absolute grlink" style="left:31.4049em;top:56.7622em;">
+
+			<span class="font-9 negative-letter-spacing  negative-letter-spacing " style="word-spacing:0em;">GPA :3.1 &nbsp;</span></div>
+					<div class="position-absolute scale-2" style="left:4.9893em;top:56.0031em;">
+						<span class="font-10 line-height no-letter-spacing" style="word-spacing:-0em;">using Django FrameWork &nbsp;</span>
+					</div>
+					<div class="position-absolute scale-2" style="left:4.9893em;top:57.0134em;z-index:256;">
+						<span class="font-10 negative-letter-spacing  no-letter-spacing" style="word-spacing:-0em;"> &nbsp;</span>
+					</div>
+					<div class="position-absolute" style="left:31.5735em;top:60.7716em;">
+						<span class="font-11 negative-letter-spacing  no-letter-spacing">2015-2017 &nbsp;</span>
+					</div>
+					<div class="position-absolute" style="left:5.1577em;top:60.6869em;">
+						<span class="font-7 negative-letter-spacing  no-letter-spacing">2022-2023 &nbsp;</span>
+					</div>
+					<div class="position-absolute" style="left:31.4049em;top:62.5213em;">
+						<span class="font-3 negative-letter-spacing  letter-spacing-0-05" style="word-spacing:-0em;">Islamic School  &nbsp;</span>
+					</div>
+					<div class="position-absolute" style="left:4.9893em;top:62.435em;">
+						<span class="font-8 negative-letter-spacing  negative-letter-spacing " style="word-spacing:0em;">Backend Trainee</span>
+						<span class="font-8 negative-letter-spacing  no-letter-spacing" style="word-spacing:0.238em;">&nbsp;</span>
+
+						<span class="font-8 negative-letter-spacing  no-letter-spacing" style="word-spacing:0.3165em;">- </span>
+						<span class="font-3 negative-letter-spacing  letter-spacing-0-05" style="word-spacing:-0em;">ITG &nbsp;</span></div>
+
+					<div class="position-absolute scale-1" style="left:31.4049em;top:63.8904em;">
+						<span class="font-9 negative-letter-spacing  negative-letter-spacing " style="word-spacing:0em;">Tawjehi &nbsp;</span></div>
+
+					<div class="position-absolute scale-1" style="left:31.4049em;top:65.069em;">
+						<span class="font-9 negative-letter-spacing  negative-letter-spacing " style="word-spacing:0em;">Grade : 95/100 &nbsp;</span></div>
+
+					<div class="position-absolute scale-2" style="left:4.9893em;top:64.3099em;">
+						<span class="font-10 negative-letter-spacing  no-letter-spacing" style="word-spacing:-0em;">Sales Force Backend  &nbsp;</span></div>
+					<div class="position-absolute scale-2" style="left:4.9893em;top:65.3202em;z-index:446;">
+						<span class="font-10 negative-letter-spacing  no-letter-spacing" style="word-spacing:-0em;">MVC architecture &nbsp;</span></div>
 				</div>
 			</div>
+			<footer class="footer"></footer>
+
 		</div>
 	</body>
-</html>
+</html>  
